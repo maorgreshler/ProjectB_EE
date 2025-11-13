@@ -1,0 +1,18 @@
+{
+  "seeds":[1, 2, 3],
+  "batch_sizes":[1],
+  "worker_counts":[16, 32, 64],
+  "local_iteration_nums":[8, 16, 32, 64],
+  "optimizers":["SLowcalSGD", "LocalSGD", "MinibatchSGD", "SLowcalMuSquared"],
+  "learning_rates":{"SLowcalSGD": [0.03], "LocalSGD": [0.03], "MinibatchSGD": [0.3], "SLowcalMuSquared":[0.03]},
+
+  "config_folder_path":"./config",
+  "dataset":"cifar10",
+  "model":"simple_conv_3_chan",
+  "num_epochs":50,
+  "eval_interval":20,
+  "use_alpha_t": false,
+  "use_wandb": true,
+  "weight_decay":0.0,
+  "experiment_name":"CIFAR_all_optimizers_50_epochs"
+}

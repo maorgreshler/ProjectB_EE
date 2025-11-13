@@ -1,0 +1,17 @@
+{
+  "seeds":[1],
+  "batch_sizes":[1],
+  "worker_counts":[128],
+  "local_iteration_nums":[128, 256],
+  "optimizers":["SLowcalMuSquared"],
+  "learning_rates":{"SLowcalMuSquared": [0.03]},
+
+  "config_folder_path":"./config",
+  "dataset":"mnist",
+  "model":"simple_conv",
+  "num_epochs":3,
+  "use_alpha_t": false,
+  "use_wandb": true,
+  "weight_decay":0.0,
+  "experiment_name":"MuSquared_W_128_LIN_128_256"
+}
